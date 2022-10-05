@@ -1,0 +1,17 @@
+.header {
+  margin-top: 100px;
+  text-align: center;
+}
+.content {
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.upload {
+  cursor: pointer;
+}
+
+.custom-button {
+  margin: 20px;
+}

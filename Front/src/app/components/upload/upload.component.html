@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="header">
+    <h1>Cargar Ordenes</h1>
+  </div>
+  <div class="content">
+    <div>
+      <form
+        class="row g-3"
+        action="/api/upload"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <div class="col-auto">
+          <input
+            class="form-control"
+            type="file"
+            id="formFile"
+            (change)="onFileChange($event)"
+            accept=".xlsx"
+          />
+        </div>
+        <div class="col-auto">
+          <span type="submit" class="btn btn-primary mb-3" (click)="onUpload()">
+            Cargar Archivo
+          </span>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
